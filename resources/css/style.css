@@ -1,0 +1,187 @@
+/* main page styles */
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}
+
+/* title styling */
+
+.title {
+  background-color: black;
+  width: 100%;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 30px 0;
+  width: 70%;
+}
+
+.title img {
+  display: inline-block;
+  height: 30px;
+  padding: 5px 10px 5px 0;
+}
+
+.title h2 {
+  color: white;
+  display: inline-block;
+  font-size: 20px;
+}
+
+/* banner styling */
+
+.banner {
+  background-image: url(../images/mainbanner.jpeg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+}
+
+.banner-container {
+  background-color: black;
+  color: white;
+  height: 150px;
+  width: 400px;
+  margin-left: 15%;
+  padding: 30px;
+  text-align: left;
+}
+
+.banner-container h3 {
+  font-size: 16px;
+  padding: 15px;
+}
+
+.banner-container h1 {
+  font-size: 36px;
+  font-weight: bold;
+  padding: 15px;
+}
+
+/* navbar styling */
+
+nav {
+  background-color: #ae2b2b;
+  width: 100%;
+}
+
+nav a {
+  color: white;
+  font-size: 16px;
+  font-weight: lighter;
+  display: inline-block;
+  padding: 30px;
+  text-decoration: none;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15%;
+  width: 70%;
+}
+
+/* product section styling */
+
+.main {
+  width: 100%;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 30px 0;
+  width: 70%;
+}
+
+.product {
+  border: 3px solid black;
+}
+
+.product-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 280px;
+  width: 280px;
+}
+
+.product img {
+  width: 200px;
+}
+
+.product p {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  line-height: 50px;
+  width: 280px;
+}
+
+/* info section */
+
+.info {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.info-container {
+  margin: 0 auto;
+  text-align: left;
+  width: 70%;
+}
+
+.info-container p {
+  height: 50px;
+  width: 280px;
+  line-height: 50px;
+
+}
+
+.info-title {
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+}
+
+.location {
+  display: inline-block;
+  padding-right: 150px;
+}
+
+.hours {
+  display: inline-block;
+  padding-right: 150px;
+}
+
+/* footer section */
+
+footer {
+  background-color: black;
+  height: 200px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  height: 200px;
+  margin: 0 auto;
+  text-align: left;
+  width: 70%;
+}
+
+footer p {
+  color: white;
+  font-size: 16px;
+  line-height: 200px;  
+}
