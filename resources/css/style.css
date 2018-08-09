@@ -1,11 +1,18 @@
 /* main page styles */
 
+html {
+  font-size: 10px;
+}
+
 body {
   color: white;
   font-family: Helvetica, sans-serif;
-  font-size: 16px;
   font-weight: lighter;
   text-align: left;
+}
+
+p {
+  font-size: 1.6rem;
 }
 
 .condensed-container {
@@ -30,18 +37,18 @@ body {
 }
 
 .title-container {
-  padding: 30px 0;
+  padding: 3rem 0;
 }
 
 .title img {
   display: inline-block;
-  height: 30px;
-  padding: 5px 10px 5px 0;
+  height: 3rem;
+  padding: .5rem 1rem .5rem 0;
 }
 
 .title h2 {
   display: inline-block;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 /* banner styling */
@@ -51,25 +58,26 @@ body {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 40rem;
 }
 
 .banner-container {
   background-color: black;
-  height: 150px;
-  width: 400px;
+  height: 15rem;
+  width: 40rem;
   margin-left: 15%;
-  padding: 30px;
+  padding: 3rem;
 }
 
 .banner-container h3 {
-  padding: 15px;
+  font-size: 1.6rem;
+  padding: 1.5rem;
 }
 
 .banner-container h1 {
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: bold;
-  padding: 15px;
+  padding: 1.5rem;
 }
 
 /* navbar styling */
@@ -80,72 +88,101 @@ nav {
 
 nav a {
   color: white;
-  font-size: 16px;
+  font-size: 1.6rem;
   display: inline-block;
-  padding: 30px 0;
+  padding: 3rem 0;
   text-decoration: none;
 }
 
 /* product section styling */
 
 .main-container {
-  padding: 30px 0;
+  flex-wrap: wrap;
+  padding: 3rem 0;
 }
 
 .product {
   border: 3px solid black;
+  margin: 0 1rem 2rem 1rem;
 }
 
 .product-image {
   justify-content: center;
-  height: 280px;
-  width: 280px;
+  height: 35rem;
+  width: 35rem;
 }
 
 .product img {
-  width: 200px;
+  width: 25rem;
 }
 
 .product p {
   background-color: black;
-  line-height: 50px;
+  line-height: 5rem;
   text-align: center;
-  width: 280px;
+  width: 35rem;
 }
 
 /* info section */
 
 .info {
-  margin-top: 50px;
+  margin-top: 5rem;
 }
 
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .info-container p {
   color: black;
-  width: 280px;
-  line-height: 50px;
+  width: 28rem;
+  line-height: 5rem;
 }
 
 #location,
 #hours {
   display: inline-block;
-  padding-right: 150px;
 }
 
 #location-title,
 #hours-title {
   background-color: black;
   color: white;
-  padding-left: 20px;
+  padding-left: 2rem;
 }
 
 /* footer section */
 
 footer {
   background-color: black;
-  height: 200px;
-  margin-top: 50px;
+  height: 20rem;
+  margin-top: 5rem;
 }
 
 footer p {
-  line-height: 200px;
+  line-height: 20rem;
+}
+
+@media only screen and (max-width: 1630px) {
+  .main-container {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .info-container {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 8px;
+  }
+
+  .banner-container {
+    margin-left: 0;
+    width: 100%;
+  }
 }
