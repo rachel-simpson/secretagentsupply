@@ -2,6 +2,7 @@
 
 html {
   font-size: 10px;
+  min-width: 480px;
 }
 
 body {
@@ -95,6 +96,10 @@ nav a {
   text-decoration: none;
 }
 
+#menu {
+  display: none;
+}
+
 /* product section styling */
 
 .main-container {
@@ -127,11 +132,6 @@ nav a {
 
 .info {
   margin-top: 5rem;
-}
-
-.info-container {
-  display: flex;
-  justify-content: space-between;
 }
 
 .info-container p {
@@ -185,6 +185,14 @@ footer p {
 @media only screen and (max-width: 600px) {
   html {
     font-size: 12px;
+  }
+
+  .category {
+    display: none;
+  }
+
+  #menu {
+    display: inherit;
   }
 
   .banner-container {
