@@ -7,12 +7,11 @@ html {
 body {
   color: white;
   font-family: Helvetica, sans-serif;
-  font-weight: lighter;
   text-align: left;
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 .condensed-container {
@@ -23,11 +22,13 @@ p {
 .flex-align-center {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .flex-justify-between {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /* title styling */
@@ -70,7 +71,7 @@ p {
 }
 
 .banner-container h3 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   padding: 1.5rem;
 }
 
@@ -88,16 +89,15 @@ nav {
 
 nav a {
   color: white;
-  font-size: 1.6rem;
+  font-size: 2rem;
   display: inline-block;
-  padding: 3rem 0;
+  padding: 3rem 2rem;
   text-decoration: none;
 }
 
 /* product section styling */
 
 .main-container {
-  flex-wrap: wrap;
   padding: 3rem 0;
 }
 
@@ -132,8 +132,8 @@ nav a {
 .info-container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
+
 .info-container p {
   color: black;
   width: 28rem;
@@ -166,6 +166,12 @@ footer p {
 
 @media only screen and (max-width: 1630px) {
   .main-container {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav-container {
     justify-content: center;
   }
 }
